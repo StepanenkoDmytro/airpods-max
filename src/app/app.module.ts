@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { ChooseColorComponent } from './components/choose-color/choose-color.component';
+import { CompositionComponent } from './components/composition/composition.component';
+import { CaseComponent } from './components/case/case.component';
+import { AudioComponent } from './components/audio/audio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     NavigationComponent,
-    ChooseColorComponent
+    ChooseColorComponent,
+    CompositionComponent,
+    CaseComponent,
+    AudioComponent
   ],
   imports: [
     BrowserModule,

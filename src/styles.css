@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1220px;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -37,4 +37,12 @@ button {
 
 ul {
     list-style: none;
+}
+
+.main { }
+
+.main__title {
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 20px;
 }
