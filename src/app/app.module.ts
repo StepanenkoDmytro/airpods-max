@@ -9,6 +9,7 @@ import { ChooseColorComponent } from './components/choose-color/choose-color.com
 import { CompositionComponent } from './components/composition/composition.component';
 import { CaseComponent } from './components/case/case.component';
 import { AudioComponent } from './components/audio/audio.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AudioComponent } from './components/audio/audio.component';
     ChooseColorComponent,
     CompositionComponent,
     CaseComponent,
-    AudioComponent
+    AudioComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
