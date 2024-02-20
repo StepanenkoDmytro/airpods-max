@@ -46,3 +46,15 @@ ul {
     font-size: 64px;
     margin-bottom: 20px;
 }
+
+@media(max-width: 770px) {
+    .main__title {
+        font-size: 36px;
+    }
+} 
+
+@media(max-width: 414px) {
+    .main__title {
+        font-size: 28px;
+    }
+}

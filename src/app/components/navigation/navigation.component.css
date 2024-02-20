@@ -17,3 +17,26 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+
+@media(max-width: 560px) {
+    .menu__list {
+        flex-wrap: wrap;
+        gap: 20px 40px;
+    }
+
+    .menu__item:first-child {
+        margin-left: auto;
+    }
+
+    .menu__item-btn {
+        margin-left: auto;
+    }
+
+    .menu__item-btn button{
+        width: 250px;
+    }
+
+    .header__top {
+        align-items: flex-start;
+    }
+}

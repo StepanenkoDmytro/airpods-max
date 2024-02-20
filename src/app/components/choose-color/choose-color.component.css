@@ -26,3 +26,35 @@
     border-radius: 20px;
     padding: 50px 55px;
 }
+
+@media (max-width: 1469px) {
+    .choose-color__list {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 770px) {
+    .choose-color {
+        padding-bottom: 60px;
+    }
+
+    .choose-color__list {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 560px) {
+    .choose-color__list {
+        margin-bottom: 40px;
+    }
+
+    .choose-color {
+        padding-bottom: 40px;
+    }
+}
+
+@media(max-width: 414px) {
+    .choose-color__title {
+        font-size: 28px;
+    }
+}

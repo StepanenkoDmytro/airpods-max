@@ -19,9 +19,42 @@
     font-size: 210px;
     font-weight: 700;
     margin-bottom: 40px;
+    margin-top: 0;
 }
 
 .energy__text {
     max-width: 400px;
     margin: 0 auto;
+}
+
+@media(max-width: 770px) {
+    .case {
+        padding: 60px 0;
+    }
+
+    .energy__title {
+        padding-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    .energy__num {
+        font-size: 110px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 560px) {
+    .case {
+        padding: 40px 0;
+    }
+}
+
+@media(max-width: 414px) {
+    .energy__num {
+        font-size: 92px;
+    }
+
+    .case img {
+        max-width: 100%;
+    }
 }

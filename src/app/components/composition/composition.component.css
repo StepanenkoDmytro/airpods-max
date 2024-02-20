@@ -29,3 +29,21 @@
 .composition__inner-text p{
     width: 230px;
 }
+
+@media(max-width: 770px) {
+    .composition {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 560px) {
+    .composition__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .composition__inner-text p{
+        width: 100%;
+    }
+}
