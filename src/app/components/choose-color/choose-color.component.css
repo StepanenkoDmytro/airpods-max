@@ -27,6 +27,10 @@
     padding: 50px 55px;
 }
 
+.choose-color__btn--active {
+    display: none;
+}
+
 @media (max-width: 1469px) {
     .choose-color__list {
         flex-wrap: wrap;

@@ -27,8 +27,27 @@
     right: 0;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(100deg, #CADBEB 0%, rgba(235, 235, 235, 0.00) 100%);
     z-index: -2;
+}
+
+.header__content-images:has(.blue)::before {
+    background: linear-gradient(100deg, #CADBEB 0%, rgba(235, 235, 235, 0.00) 100%);
+}
+
+.header__content-images:has(.red)::before {
+    background: linear-gradient(100deg, #F3D6D1 0%, rgba(235, 235, 235, 0.00) 100%);
+}
+
+.header__content-images:has(.green)::before {
+    background: linear-gradient(100deg, #DDEAD9 0%, rgba(235, 235, 235, 0.00) 100%);
+}
+
+.header__content-images:has(.black)::before {
+    background: linear-gradient(100deg, #B6B6B6 0%, rgba(235, 235, 235, 0.00) 100%);
+}
+
+.header__content-images:has(.white)::before {
+    background: linear-gradient(100deg, #FAFAFA 0%, rgba(235, 235, 235, 0.00) 100%);
 }
 
 .title {
@@ -36,7 +55,7 @@
     font-weight: 700;
     position: absolute;
     padding-top: 110px;
-    /* padding-top: 0; */
+    margin: 0 auto;
 }
 
 .title--air {
@@ -77,52 +96,190 @@
 }
 
 @media (max-width: 1349px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    .header__content {
+        position: relative;
+        top: 10px;
+        left: -65px;
+    }
+
     .title {
         transform: none;
-        font-size: 140px;
+        font-size: 165px;
         padding-top: 10vh;
         left: 0;
         right: 0;
         text-align: center;
     }
 
-    .title--pod {
-        z-index: -1;
-    }
-
     .title--s {
-        transform: none;
+        transform: translate(60px,75px);
     }
 
     .title--m {
-        transform: none;
+        transform: translate(15px, 300px);
     }
 
     .title--ax {
+        transform: translate(490px, 240px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 800px;
+    }
+
+    .header__content {
+        position: relative;
+        top: 30px;
+        left: -50px;
+    }
+
+    .title {
         transform: none;
+        font-size: 150px;
+        padding-top: 10vh;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .title--s {
+        transform: translate(60px,75px);
+    }
+
+    .title--m {
+        transform: translate(25px, 310px);
+    }
+
+    .title--ax {
+        font-size: 130px;
+        transform: translate(445px, 260px);
     }
 }
 
 @media (max-width: 930px) {
-    .title {
+    .container {
+        max-width: 600px;
+    }
+
+    .header {
+        min-height: 50vh;
+    }
+
+    .header__content {
         position: relative;
-        font-size: 100px;
+        top: 70px;
+        left: -90px;
+    }
+
+    .title {
+        position: absolute;
+        font-size: 120px;
         padding-top: 0;
     }
 
+    .title--s {
+        transform: translate(30px,70px);
+    }
+
     .title--m {
-        padding-left: 15px;
+        transform: translate(370px, 80px);
+    }
+
+    .title--ax {
+        font-size: 110px;
+        transform: translate(340px, 185px);
     }
 }
 
 @media(max-width: 770px) {
+    .container {
+        max-width: 500px;
+    }
+
+    .header__content {
+        position: relative;
+        top: 65px;
+        left: -45px;
+    }
+
     .title {
-        font-size: 58px;
+        font-size: 80px;
+    }
+
+    .title--s {
+        transform: translate(65px,65px);
+    }
+
+    .title--m {
+        transform: translate(53px, 195px);
+    }
+
+    .title--ax {
+        font-size: 70px;
+        transform: translate(285px, 185px);
     }
 } 
 
-@media(max-width: 404px) {
+@media(max-width: 600px) {
+    .container {
+        max-width: 350px;
+    }
+
+    .header__content {
+        position: relative;
+        top: 40px;
+        left: -60px;
+    }
+
+    .title {
+        font-size: 70px;
+    }
+
+    .title--s {
+        transform: translate(24px,37px);
+    }
+
+    .title--m {
+        transform: translate(219px, 49px);
+    }
+
+    .title--ax {
+        font-size: 60px;
+        transform: translate(200px, 100px);
+    }
+} 
+
+@media(max-width: 450px) {
+    .container {
+        max-width: 250px;
+    }
+
+    .header__content {
+        position: relative;
+        top: 25px;
+        left: -43px;
+    }
+
     .title {
         font-size: 50px;
+    }
+
+    .title--s {
+        transform: translate(16px,30px);
+    }
+
+    .title--m {
+        transform: translate(152px, 32px);
+    }
+
+    .title--ax {
+        font-size: 40px;
+        transform: translate(141px, 70px);
     }
 }

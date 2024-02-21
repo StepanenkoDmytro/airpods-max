@@ -1,9 +1,8 @@
-<app-header></app-header>
+<app-header [color]="color"></app-header>
 <main class="main">
-    <app-choose-color></app-choose-color>
-    <app-composition></app-composition>
-    <app-case></app-case>
+    <app-choose-color [activeColor]="color" (changeColorAction)="changeColor($event)"></app-choose-color>
+    <app-composition [color]="color"></app-composition>
+    <app-case [color]="color"></app-case>
     <app-audio></app-audio>
-    
 </main> 
 <app-footer></app-footer>

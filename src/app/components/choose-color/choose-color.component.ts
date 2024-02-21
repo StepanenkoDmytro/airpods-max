@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-choose-color',
@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./choose-color.component.css']
 })
 export class ChooseColorComponent {
+  public colors: string[] = ['black', 'white', 'green', 'red', 'blue'];
 
+  @Input()
+  public activeColor: string;
+  @Output()
+  public changeColorAction: EventEmitter<string> = new EventEmitter<string>();
+
+  public selectColor(color: string): void {
+    this.changeColorAction.emit(color);
+  }
 }

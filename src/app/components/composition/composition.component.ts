@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-composition',
@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class CompositionComponent {
 
+  @Input()
+  public color: string;
+
+  public getImagePath(): string {
+    return 'assets/images/side-' + this.color + '.jpg';
+  }
 }

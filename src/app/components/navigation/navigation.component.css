@@ -40,3 +40,13 @@
         align-items: flex-start;
     }
 }
+
+@media(max-width: 450px) {
+    .menu__item {
+        font-size: 13px;
+    }
+
+    .menu__item-btn button {
+        width: 210px;
+    }
+}

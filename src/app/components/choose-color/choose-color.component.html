@@ -7,17 +7,13 @@
     </div>
 
     <div class="choose-color__list">
-        <button class="choose-color__btn">
-            <img src="assets/images/airpods-btn-black.png" alt="">
-        </button>
-        <button class="choose-color__btn">
-            <img src="assets/images/airpods-btn-white.png" alt="">
-        </button>
-        <button class="choose-color__btn">
-            <img src="assets/images/airpods-btn-green.png" alt="">
-        </button>
-        <button class="choose-color__btn">
-            <img src="assets/images/airpods-btn-red.png" alt="">
-        </button>
+        <div class="choose-color__list">
+            <button *ngFor="let color of colors" 
+                    class="choose-color__btn"  
+                    [ngClass]="{ 'choose-color__btn--active': activeColor === color }" 
+                    (click)="selectColor(color)">
+                <img [src]="'assets/images/airpods-btn-' + color + '.png'" alt="">
+            </button>
+        </div>
     </div>
 </section>
